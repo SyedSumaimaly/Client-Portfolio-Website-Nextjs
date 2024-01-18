@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Icon from '../../utils/icon.util'
 
 import css from '../../../styles/sections/projects/recent.module.scss'
+import Link from 'next/link';
 
 export default function GitProjects() {
 	return (
@@ -22,12 +23,12 @@ export default function GitProjects() {
 				</section>
 				<div className={css.projects}>
 				<div style={{gap:20, display:'flex', flexWrap:'wrap', justifyContent: 'space-around'}}>
-					<img src='/img/portfolio/4th-Dimension no.1.jpg' width={300} />
-					<img src='/img/portfolio/Bio-architecture no.7.jpg' width={300} />
-					<img src='/img/portfolio/Bio-architecture no.8.jpg' width={300} />
-					<img src='/img/portfolio/Arabelle.jpg' width={300} />
-					<img src='/img/portfolio/AuditoriumShores.JPG' width={300} />
-					<img src='/img/portfolio/Bio-architecture no.4.jpg' width={300} />
+					<Link href={'/art-detail'}><img src='/img/portfolio/4th-Dimension no.1.jpg' width={300} /></Link>
+					<Link href={'/art-detail'}><img src='/img/portfolio/Bio-architecture no.7.jpg' width={300} /></Link>
+					<Link href={'/art-detail'}><img src='/img/portfolio/Bio-architecture no.8.jpg' width={300} /></Link>
+					<Link href={'/art-detail'}><img src='/img/portfolio/Arabelle.jpg' width={300} /></Link>
+					<Link href={'/art-detail'}><img src='/img/portfolio/AuditoriumShores.JPG' width={300} /></Link>
+					<Link href={'/art-detail'}><img src='/img/portfolio/Bio-architecture no.4.jpg' width={300} /></Link>
 				</div>
 				</div>
 			</Container>
