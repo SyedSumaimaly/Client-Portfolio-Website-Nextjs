@@ -3,22 +3,22 @@ export default function artDetail() {
 
 	return (
 		<>
-			<div style={styles.container}>
+			<div style={styles.container} className="art_detailContainer">
 				<div style={styles.box}>
-					<img src="/img/portfolio/Eyes.JPG" width={500}  />
+					<img src="/img/portfolio/Eyes.JPG" width={500} />
 				</div>
 				<div style={styles.box}>
 					<div>
-					<span style={styles.heading}>Title: </span>
-					<span>The Eyes of the World</span>
+						<span style={styles.heading} className="heading">Title: </span>
+						<span style={styles.details}>The Eyes of the World</span>
 					</div>
 					<div>
-					<span style={styles.heading}>Dimensions: </span>
-					<span>1234 x 0987</span>
+						<span style={styles.heading} className="heading">Dimensions: </span>
+						<span style={styles.details}>1234 x 0987</span>
 					</div>
 					<div>
-					<span style={styles.heading}>Medium: </span>
-					<span>1234 x 0987</span>
+						<span style={styles.heading} className="heading">Medium: </span>
+						<span style={styles.details}>1234 x 0987</span>
 					</div>
 					<div>
 						<button style={styles.button}>Inquiry about availability</button>
@@ -40,6 +40,7 @@ const styles = {
 	heading: {
 		fontSize: '25px',
 		fontWeight: 'bold',
+		color:'var(--primary-bright)'
 	},
 	box: {
 		padding: 10,
@@ -52,5 +53,9 @@ const styles = {
 		padding: '1rem',
 		borderRadius: '5px',
 		cursor: 'pointer'
+	},
+
+	details: {
+		color:'var(--secondary-bright)'
 	}
 }

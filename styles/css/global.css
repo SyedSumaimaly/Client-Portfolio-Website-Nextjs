@@ -189,6 +189,36 @@ a svg {
 
 /*# sourceMappingURL=global.css.map */
 
-.gif{
+.gif {
     padding-top: 10% !important;
+}
+
+
+.art_detailContainer input,
+textarea {
+    border: 1px solid transparent;
+    background-color: white;
+    color: #ee24ee;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .art_detailContainer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .heading {
+        font-size: 15px !important;
+    }
+
+    .art_detailContainer {
+        padding: 0rem !important;
+        padding-top: 5rem !important;
+    }
 }
